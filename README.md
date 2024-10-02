@@ -1,0 +1,1 @@
+# plugins-laposta-signup-basic
