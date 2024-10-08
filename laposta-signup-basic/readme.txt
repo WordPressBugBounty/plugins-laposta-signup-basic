@@ -4,7 +4,7 @@ Tags: laposta, newsletters, marketing, form, GDPR
 Requires at least: 4.7
 Tested up to: 6.6
 Requires PHP: 7.1
-Stable tag: 3.0.0
+Stable tag: 3.1.0
 License: BSD 2-Clause License
 
 Laposta is a Dutch email marketing tool. Load your Laposta lists and render fields in a HTML form with custom styling.
@@ -52,8 +52,9 @@ Please login to your admin dashboard and go to "Settings" -> "Laposta Signup Bas
 
 = What are the available Wordpress filters?  =
 
-* Settings page capability - 'laposta_signup_basic_settings_page_capability': Modifies the required capability for editing the plugin settings. The first and only argument is the capability.
 * Enable logging - 'laposta_signup_basic_enable_logging': A filter to enable or disable logging of errors within this plugin. The first and only argument is the default value, which is based on WP_DEBUG.
+* Settings page capability - 'laposta_signup_basic_settings_page_capability': Modifies the required capability for editing the plugin settings. The first and only argument is the capability.
+* Menu position - 'laposta_signup_basic_menu_position': Modifies the position of the menu item in the admin environment. The first and only argument is the position.
 * Field label - 'laposta_signup_basic_filter_field_label': Modifies the field label. The first argument is the field label, the second is the list ID, and the third is an array of the field.
 * Required indicator - 'laposta_signup_basic_filter_required_indicator': Modifies the required indicator at the end of the field label. The first argument is the indicator, the second is the list ID, and the third is an array of the field.
 * Field placeholder - 'laposta_signup_basic_filter_field_placeholder': Modifies the field placeholder. The first argument is the field placeholder, the second is the list ID, and the third is an array of the field.
@@ -65,22 +66,15 @@ Please login to your admin dashboard and go to "Settings" -> "Laposta Signup Bas
 
 == Upgrade Notice ==
 
-= 3.0.0 =
-
-Important: This is a major update and may not be 100% backward-compatible with previous versions due to changes in the form structure, including new elements and relocated components. Please review these changes carefully, especially if you have custom styles or scripts.
-
-Key Changes:
-* The plugin is now WCAG 2.1 compliant, enhancing accessibility with appropriate aria attributes, improved keyboard navigation, and screen reader support.
-* Error feedback is now provided immediately below fields for clearer and more immediate guidance to users.
-* Checkbox and radio groups are now enclosed in a fieldset with a legend for improved accessibility and structure.
-* Additional wrappers have been added for better layout control, and the success message is now contained within the form element, improving compatibility with screen readers.
-* Date inputs now use the HTML5 date type for improved user experience in supported browsers. For unsupported browsers, placeholders will display the correct format.
-
+= 3.1.0 =
+* Important Notice: The plugin settings have been relocated. You can now access them directly from the main menu instead of the settings submenu.
+* The default Dutch translation is now informal instead of formal, providing a friendlier tone better suited for most users.
 
 == Changelog ==
 
-= 3.0.0 =
-Important: This is a major update and may not be 100% backward-compatible with previous versions due to changes in the form structure, including new elements and relocated components. Please review these changes carefully, especially if you have custom styles or scripts.
+= 3.1.0 =
+* Important Notice: The plugin settings have been relocated. You can now access them directly from the main menu instead of the settings submenu.
+* The default Dutch translation is now informal instead of formal, providing a friendlier tone better suited for most users.
 
 Key Changes:
 * The plugin is now WCAG 2.1 compliant, enhancing accessibility with appropriate aria attributes, improved keyboard navigation, and screen reader support.
